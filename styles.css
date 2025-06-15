@@ -10,6 +10,7 @@ body {
   height: 100vh;
   background-image: url('background.jpg'); /* Opcional: imagen de fondo */
   background-size: cover;
+  overflow: hidden; /* Evitar el desplazamiento innecesario */
 }
 
 .container {
@@ -46,21 +47,26 @@ body {
   max-width: 600px;
   margin: 20px auto;
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transform: translateY(-50px);
   opacity: 0;
   transition: all 0.5s ease-in-out;
+  max-height: 80vh; /* Limita la altura máxima */
+  overflow-y: auto; /* Asegura que el contenido largo se pueda desplazar */
 }
 
 .carta h1 {
   font-size: 24px;
   color: #333;
+  margin-bottom: 15px;
 }
 
 .carta p {
   font-size: 18px;
   line-height: 1.6;
   color: #555;
+  margin-bottom: 20px; /* Añadir espacio entre párrafos */
 }
+
