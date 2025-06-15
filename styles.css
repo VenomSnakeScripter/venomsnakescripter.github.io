@@ -55,6 +55,7 @@ body {
   transition: all 0.5s ease-in-out;
   max-height: 80vh; /* Limita la altura máxima */
   overflow-y: auto; /* Asegura que el contenido largo se pueda desplazar */
+  margin-bottom: 50px; 
 }
 
 .carta h1 {
